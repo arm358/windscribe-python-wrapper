@@ -36,7 +36,7 @@ vpn.connect(server="Cheese")
 
 ###### Login
 ```vpn.login(<user>, <password>)```
-  This is automatically called when instantiating the class. No need to call it again unless you call the ```logout()``` method.
+  This is automatically called when instantiating the class. No need to call it again unless you call the logout() method.
   
 ###### Locations
 ```vpn.locations()```
@@ -45,7 +45,7 @@ vpn.connect(server="Cheese")
 ###### Connect
 ```vpn.connect(<server>, <rand = True/False>)```
   This connects to a server if specified, a random server if rand = True, or the best available if both arguments are not passed.
-  Server should be the Label of the server (for example, server in Las Vegas is labelled "Casino". Get the labels for all available servers by using the ```locations()``` method.
+  Server should be the Label of the server (for example, server in Las Vegas is labelled "Casino". Get the labels for all available servers by using the locations() method.
   
 ###### Disconnect
 ```vpn.disconnect()```
