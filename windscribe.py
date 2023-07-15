@@ -19,22 +19,22 @@ class Windscribe:
 
     def locations(self):
         """prints the locations available to connect to in the shell"""
-        os.system("windscribe locations")
+        os.system("windscribe-cli locations")
 
     def connect(self, server=None, rand=False):
         """connects to given server, best available server if no server given, or random server"""
         if rand:
             choice = random.choice(self.servers)
-            os.system(f"windscribe connect {choice}")
+            os.system(f"windscribe-cli connect {choice}")
         elif server != None:
-            os.system(f"windscribe connect {server}")
+            os.system(f"windscribe-cli connect {server}")
         else:
-            os.system("windscribe connect")
+            os.system("windscribe-cli connect")
     
     def disconnect(self):
         """disconnect from the current server"""
-        os.system("windscribe disconnect")
+        os.system("windscribe-cli disconnect")
 
     def logout(self):
         """logout of windscribe"""
-        os.system("windscribe logout")
+        os.system("windscribe-cli logout")
