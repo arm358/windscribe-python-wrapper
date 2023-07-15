@@ -12,7 +12,7 @@ class Windscribe:
 
     def login(self, user, password):
         """logs into Windscribe using provided credentials"""
-        commands = ["windscribe", "login"]
+        commands = ["windscribe-cli", "login"]
         proc = subprocess.Popen(commands, universal_newlines=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         proc.stdin.write(user)
         proc.stdin.write(password)
